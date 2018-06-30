@@ -1,3 +1,9 @@
 <ul class="video-list">
-  <video-list-entry video="movie" ng-repeat="movie in $ctrl.videos"></video-list-entry>
+  <video-list-entry 
+  video="movie" 
+  index="$index"
+  click="$ctrl.click" 
+  ng-repeat="movie in $ctrl.videos track by $index"
+  >
+  </video-list-entry>
 </ul>
