@@ -7,6 +7,11 @@ angular.module('video-player')
         this.click(input);
         this.input = '';
       };
+      this.handleKeyPress = (event) => {
+        if (event.keyCode === 13) {
+          this.handleClick(this.input);
+        }
+      };
     },
     bindings: {
       click: '<'

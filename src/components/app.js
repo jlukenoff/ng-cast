@@ -1,6 +1,6 @@
 angular.module('video-player')
   .component('app', {
-    controller: ['youTube', function(youTube) {
+    controller: ['youTube', 'commentLoader', function(youTube, commentLoader) {
       this.videos = [];
       this.video = {};
       

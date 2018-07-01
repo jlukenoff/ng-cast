@@ -10,7 +10,7 @@ angular.module('video-player')
         url: 'https://www.googleapis.com/youtube/v3/search',
         method: 'GET',
         params: {
-          maxResults: '5',
+          maxResults: '7',
           part: 'snippet',
           q: query,
           type: 'video',

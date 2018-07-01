@@ -7,11 +7,12 @@
   <div class="row">
     <div class="col-md-7">
       <video-player video="$ctrl.video"></video-player>
+      <comments></comments>
     </div>
     <div class="col-md-5">
       <video-list 
       videos="$ctrl.videos" 
-      click="$ctrl.handleVidChange"
+      on-click="$ctrl.handleVidChange"
       ></video-list>
     </div>
   <div>
